@@ -1,0 +1,39 @@
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-learn
+  - pandas
+  #- pytorch-cuda=11.8 # comment out for local/mac install
+  - pytorch
+  - torchvision
+  - line_profiler
+  - py-spy
+  - torchaudio
+  - pip:
+    - tqdm
+    - plotnine
+    - ipykernel
+    - pyroaring
+    - tensorboard
+    - pyarrow
+    - transformers
+    - datasets
+    - einops
+    - modin[ray] # preprocessing
+    # - pillow-simd # failed on mac
+    - pytorch-lightning
+    - mosaicml[deepspeed,vit,nlp,tensorboard]
+    - ray[air]
+    - psutil
+    - annoy
+    - pydantic
+    - uvicorn
+    - fastapi
+    - git+https://github.com/openai/CLIP.git
